@@ -1,0 +1,719 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
+Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "ui Toggle"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 50.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+end)
+
+game.StarterGui:SetCore("SendNotification", { 
+
+Title = "thx for using our script"; 
+
+Text = "by the Scripters bs"; -- what the text says (ofc) 
+
+Duration = 30; 
+
+}) 
+
+wait(1) 
+
+game.StarterGui:SetCore("SendNotification", { 
+
+Title = "Enjoy the Script"; 
+
+Text = "Subscribe to the Scripters"; -- what the text says (ofc) 
+
+Duration = 30; 
+
+})
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 50
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
+
+local Window = Library.CreateLib("night bedwars v2", "Ocean")
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewKeybind("ui Toggle", "", Enum.KeyCode.F6, function()
+	Library:ToggleUI()
+end)
+
+MainSection:NewLabel("this script is for all bedwars script")
+
+MainSection:NewLabel("we don't know how to make a killAura or anything")
+
+MainSection:NewLabel("jn hh gaming bedwars all script")
+
+MainSection:NewButton("BJNv3", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/JN-HH-Gaming-Pro/main/JN%20HH%20Gaming%20Pro",true))()
+end)
+
+MainSection:NewLabel("vape jn hh gaming script")
+
+MainSection:NewButton("vapev4 jn hh gaming", "", function()
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/1016359889246879802/1039822473933373510/Protected.lua",true))()
+end)
+
+MainSection:NewLabel("first jn hh gaming bedwars script killAura hydrogen")
+
+MainSection:NewButton("first jn hh gaming killAura", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/JN-HH-Gaming-1-Click/main/JN%20HH%20Gaming%201%20Click",true))()
+end)
+
+MainSection:NewLabel("darkrai x is only one bedwars script")
+
+MainSection:NewButton("darkrai x bedwars", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Bedwars"))()
+end)
+
+MainSection:NewLabel("and script you may need")
+
+MainSection:NewButton("inf jumps", "", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+MainSection:NewLabel("vapev4 don't vape")
+
+MainSection:NewButton("vapev4", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+MainSection:NewLabel("animation scripts by jn hh gaming")
+
+MainSection:NewButton("animation scripts", "", function()
+    loadstring(game:HttpGet("https://cdn.discordapp.com/attachments/1016359889246879802/1039819753402941460/Protected.lua",true))()
+end)
+
+MainSection:NewLabel("Keyboard script")
+
+MainSection:NewButton("Keyboard", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+MainSection:NewLabel("the end")
+
+local Credits = Window:NewTab("Credits")
+
+local CreditsSection = Credits:NewSection("Credits")
+
+CreditsSection:NewLabel("by the Scripters bs")
+
+CreditsSection:NewLabel("join the discord https://discord.gg/TbCYjPFf")
+
+MainSection:NewLabel("op script")
+
+MainSection:NewButton("cool script", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bojoexploitz/yooo/main/itsobfuscated/InfinityHubTooOP", true))()
+end)
+
+MainSection:NewLabel("that's all the bedwars scripts for hydrogen I think")
+
+local Fun = Window:NewTab("Fun")
+
+local FunSection = Fun:NewSection("Fun")
+
+FunSection:NewButton("Toy Animation","Opens Toy Animation",function() 
+local Animate = 
+game.Players.LocalPlayer.Character.Animate 
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498" 
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736" 
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345" 
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708" 
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020" 
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869" 
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423" 
+end)
+
+FunSection:NewButton("Robot Animation","Plays Robot Animation",function() 
+local Animate = 
+game.Players.LocalPlayer.Character.Animate 
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211" 
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559" 
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330" 
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570" 
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535" 
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039" 
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089" 
+end)
+
+FunSection:NewButton("Zombie Animation" , "Plays Zombie Animation",function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/t3yTSPRn",true))() 
+end)
+
+FunSection:NewButton("Ninja Animation","Plays Ninja Animation",function() 
+loadstring(game:HttpGet("https://pastebin.com/raw/bwGLPVV7",true))() 
+end)
+
+MainSection:NewButton("AutoToxic", "", function()
+local choosePlayer = false --set true if you want to insult one person only
+local chosenPlayer = "" --if chosePlayer = true, type playername in quotes
+
+local Taunts = { --add as many as you wish
+"You're bad at the game.",
+"Imagine Crying.",
+"L.",
+"L bozo.",
+"Imagine been that bad.",
+"You're saltines is enough for season my food.",
+"How a person can be that bad like you.",
+"Whats that? SOUNDS LIKE SKILL ISSUE.",
+"Bozo Crying?.",
+"Wow you said something to made us laugh.",
+"Jn Jh Gaming skidder and fake.",
+"Your mother made a mistake the day you were born.",
+"You are the waste of earth.",
+"No one likes you.",
+"Even dogs are better than you.",
+"bad.",
+"Not really.",
+"I feel bad for your mom and dad.",
+"I dont care about the fact you think Im hacking, I care about how you lost to a person.",
+
+
+}
+
+local Remote = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+local function Insult()
+   local players = game.Players:GetChildren()
+   local howManyPlayers = #players
+   
+   local ran = math.random(1,howManyPlayers)
+   local chosenOne = players[ran]
+   local chance = math.random(1,17)
+   
+   if choosePlayer == true then
+       Remote:FireServer(chosenPlayer.." " ..Taunts[math.random(1,#Taunts)],"All")
+   elseif chance <= 5 then
+       Remote:FireServer(chosenOne.Name.." " ..Taunts[math.random(1,#Taunts)],"All")
+   else
+       Remote:FireServer(Taunts[math.random(1,#Taunts)],"All")
+   end
+end
+   
+
+local randTime = math.random(5,10)
+
+while true and wait(randTime) do
+   Insult()
+end
+    print("...")
+end)
+
+MainSection:NewToggle("Esp", "", function(state)
+    if state then
+local color = BrickColor.new(50,0,250)
+local transparency = .8
+
+local Players = game:GetService("Players")
+local function _ESP(c)
+  repeat wait() until c.PrimaryPart ~= nil
+  for i,p in pairs(c:GetChildren()) do
+    if p.ClassName == "Part" or p.ClassName == "MeshPart" then
+      if p:FindFirstChild("shit") then p.shit:Destroy() end
+      local a = Instance.new("BoxHandleAdornment",p)
+      a.Name = "shit"
+      a.Size = p.Size
+      a.Color = color
+      a.Transparency = transparency
+      a.AlwaysOnTop = true    
+      a.Visible = true    
+      a.Adornee = p
+      a.ZIndex = true    
+
+    end
+  end
+end
+local function ESP()
+  for i,v in pairs(Players:GetChildren()) do
+    if v ~= game.Players.LocalPlayer then
+      if v.Character then
+        _ESP(v.Character)
+      end
+      v.CharacterAdded:Connect(function(chr)
+        _ESP(chr)
+      end)
+    end
+  end
+  Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(chr)
+      _ESP(chr)
+    end)  
+  end)
+end
+ESP()
+    end
+end)
+
+MainSection:NewButton("AntiCheat Bypass", "", function()
+local player = game.Players.LocalPlayer
+	repeat
+		wait()
+	until player:FindFirstChild("Backpack")
+	local Connection = game.DescendantAdded:Connect(function(Inst)
+		local Success, Error = pcall(function()
+			return Inst.DisplayOrder
+		end)
+		if tostring(Inst) ~= "DevConsoleMaster" and tostring(Inst) ~= "InputCatcher" and Error == "The current identity (2) cannot Class security check (lacking permission 1)" then
+			while true do
+			end
+		end
+	end)
+	local toSave = {}
+	local function saveScript(saved)
+		toSave[saved] = true
+		local storedName = saved.Name
+		saved:GetPropertyChangedSignal("Disabled"):connect(function()
+			if saved.Disabled then
+				local robloxlocked = pcall(function()
+					saved.Disabled = false
+				end)
+				if not robloxlocked then
+					while true do
+					end
+				end
+			end
+		end)
+		saved:GetPropertyChangedSignal("Name"):connect(function()
+			saved.Name = storedName
+		end)
+	end
+	for _, v in pairs(script.Parent:GetChildren()) do
+		if v:IsA("LocalScript") and (v.Name == "check" or v.Name == "checkDo") and v ~= script then
+			saveScript(v)
+		end
+	end
+	script.Parent.ChildRemoved:connect(function(child)
+		if toSave[child] then
+			local saved, cloned = pcall(function()
+				return child:Clone()
+			end)
+			if saved then
+				cloned.Parent = script.Parent
+				saveScript(cloned)
+			else
+				while true do
+				end
+			end
+		end
+	end)
+	local setUpCharacter = function(char)
+		wait(5)
+		for _, v in pairs(char:GetDescendants()) do
+			if v:IsA("BasePart") and v:FindFirstChildOfClass("TouchTransmitter") then
+				while true do
+				end
+			elseif v:IsA("BasePart") then
+				v.ChildAdded:connect(function(child)
+					if child:IsA("TouchTransmitter") then
+						while true do
+						end
+					end
+				end)
+			end
+		end
+		char:WaitForChild("HumanoidRootPart"):GetPropertyChangedSignal("CFrame"):connect(function()
+			while true do
+			end
+		end)
+	end
+	if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		wait(5)
+		setUpCharacter(player.Character)
+	end
+	player.CharacterAdded:connect(function(char)
+		wait(5)
+		setUpCharacter(char)
+	end)
+	player.Backpack.ChildAdded:Connect(function(added)
+		local toolCount = 0
+		for i, v in pairs(player.Backpack:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player.Character:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		for i, v in pairs(player:GetChildren()) do
+			if v:IsA("Tool") then
+				toolCount = toolCount + 1
+			end
+		end
+		if toolCount > 2 then
+			while true do
+			end
+		end
+	end)
+    print("...")
+end)
+
+MainSection:NewToggle("AntiVoid", "", function(state)
+    if state then
+local specialpos = (workspace.MapCFrames:FindFirstChild("center") and workspace.MapCFrames.center.Value.p == Vector3.new(77, 11, 35))
+        AntiVoidP = Instance.new("Part")
+        AntiVoidP.Parent = Workspace
+        AntiVoidP.Name = "AntiVoid"
+        AntiVoidP.CanCollide = true
+        AntiVoidP.Size = Vector3.new(2048, 1, 2048)
+        AntiVoidP.Anchored = true
+        AntiVoidP.Transparency = 0.55
+        AntiVoidP.Material = Enum.Material.Neon
+        AntiVoidP.Color = Color3.fromRGB(254,0,4)
+        AntiVoidP.Position = Vector3.new(0, 30.5, 0)
+    end
+end)
+
+MainSection:NewButton("Full Bright", "", function()
+game.Lighting.FogEnd = 100000
+game.Lighting.FogStart = 0
+game.Lighting.ClockTime = 14
+game.Lighting.Brightness = 15
+game.Lighting.GlobalShadows = true
+    print("...")
+end)
+
+MainSection:NewButton("stop the Cape", "", function()
+local player = game:GetService("Players")
+
+local lplr = player.LocalPlayer
+
+if lplr.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+
+      if lplr.Character:FindFirstChild("Torso") then
+
+        torso = lplr.Character.Torso
+
+      else
+
+        torso = lplr.Character.UpperTorso
+
+      end
+
+      local CapeP = Instance.new("Part", torso.Parent)
+
+      CapeP.Name = "Cape"
+
+      CapeP.Anchored = false
+
+      CapeP.CanCollide = false
+
+      CapeP.TopSurface = 1
+
+      CapeP.BottomSurface = 1
+
+      CapeP.Color = Color3.fromRGB(255,1,10)
+
+      CapeP.FormFactor = "Custom"
+
+      CapeP.Size = Vector3.new(0.2,0.2,0.2)
+
+      local decal = Instance.new("Decal", CapeP)
+
+      decal.Texture = "http://www.roblox.com/asset/?id=9608953146"
+
+      decal.Face = "Back"
+
+      local msh = Instance.new("BlockMesh", CapeP)
+
+      msh.Scale = Vector3.new(9,17.5,0.5)
+
+      local motor = Instance.new("Motor", CapeP)
+
+      motor.Part0 = CapeP
+
+      motor.Part1 = torso
+
+      motor.MaxVelocity = 0.01
+
+      motor.C0 = CFrame.new(0,1.75,0) * CFrame.Angles(0,math.rad(90),0)
+
+      motor.C1 = CFrame.new(0,1,0.45) * CFrame.Angles(0,math.rad(90),0)
+
+      local wave = false
+
+      repeat wait(1/44)
+
+        decal.Transparency = torso.Transparency
+
+        local ang = 0.1
+
+        local oldmag = torso.Velocity.magnitude
+
+        local mv = 0.002
+
+        if wave then
+
+          ang = ang + ((torso.Velocity.magnitude/10) * 0.05) + 0.05
+
+          wave = false
+
+        else
+
+          wave = true
+
+        end
+
+        ang = ang + math.min(torso.Velocity.magnitude/11, 0.5)
+
+        motor.MaxVelocity = math.min((torso.Velocity.magnitude/111), 0.04) + mv
+
+        motor.DesiredAngle = -ang
+
+        if motor.CurrentAngle < -0.2 and motor.DesiredAngle > -0.2 then
+
+          motor.MaxVelocity = 0.04
+
+        end
+
+        repeat wait() until motor.CurrentAngle == motor.DesiredAngle or math.abs(torso.Velocity.magnitude - oldmag) >= (torso.Velocity.magnitude/10) + 1
+
+        if torso.Velocity.magnitude < 0.1 then
+
+          wait(0.1)
+
+        end
+
+      until not CapeP or CapeP.Parent ~= torso.Parent
+
+    end
+
+
+    print("...")
+end)
+
+MainSection:NewButton("Cape(Purple)", "", function()
+local player = game:GetService("Players")
+
+local lplr = player.LocalPlayer
+
+if lplr.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+
+      if lplr.Character:FindFirstChild("Torso") then
+
+        torso = lplr.Character.Torso
+
+      else
+
+        torso = lplr.Character.UpperTorso
+
+      end
+
+      local CapeP = Instance.new("Part", torso.Parent)
+
+      CapeP.Name = "Cape"
+
+      CapeP.Anchored = false
+
+      CapeP.CanCollide = false
+
+      CapeP.TopSurface = 1
+
+      CapeP.BottomSurface = 1
+
+      CapeP.Color = Color3.fromRGB(101,0,255)
+
+      CapeP.FormFactor = "Custom"
+
+      CapeP.Size = Vector3.new(0.2,0.2,0.2)
+
+      local decal = Instance.new("Decal", CapeP)
+
+      decal.Texture = "http://www.roblox.com/asset/?id=9608953146"
+
+      decal.Face = "Back"
+
+      local msh = Instance.new("BlockMesh", CapeP)
+
+      msh.Scale = Vector3.new(9,17.5,0.5)
+
+      local motor = Instance.new("Motor", CapeP)
+
+      motor.Part0 = CapeP
+
+      motor.Part1 = torso
+
+      motor.MaxVelocity = 0.01
+
+      motor.C0 = CFrame.new(0,1.75,0) * CFrame.Angles(0,math.rad(90),0)
+
+      motor.C1 = CFrame.new(0,1,0.45) * CFrame.Angles(0,math.rad(90),0)
+
+      local wave = false
+
+      repeat wait(1/44)
+
+        decal.Transparency = torso.Transparency
+
+        local ang = 0.1
+
+        local oldmag = torso.Velocity.magnitude
+
+        local mv = 0.002
+
+        if wave then
+
+          ang = ang + ((torso.Velocity.magnitude/10) * 0.05) + 0.05
+
+          wave = false
+
+        else
+
+          wave = true
+
+        end
+
+        ang = ang + math.min(torso.Velocity.magnitude/11, 0.5)
+
+        motor.MaxVelocity = math.min((torso.Velocity.magnitude/111), 0.04) + mv
+
+        motor.DesiredAngle = -ang
+
+        if motor.CurrentAngle < -0.2 and motor.DesiredAngle > -0.2 then
+
+          motor.MaxVelocity = 0.04
+
+        end
+
+        repeat wait() until motor.CurrentAngle == motor.DesiredAngle or math.abs(torso.Velocity.magnitude - oldmag) >= (torso.Velocity.magnitude/10) + 1
+
+        if torso.Velocity.magnitude < 0.1 then
+
+          wait(0.1)
+
+        end
+
+      until not CapeP or CapeP.Parent ~= torso.Parent
+
+    end
+    print("...")
+end)
+
+MainSection:NewLabel("doesn't work")
+MainSection:NewToggle("KillAura", "DamgesPlayer", function(state)
+    if state then
+            local kauraval = v
+            spawn(function()
+                if kauraval and entity.isAlive then
+                    conectionkillaura = RunService.RenderStepped:Connect(function(step)
+                        if not kauraval then 
+                            return
+                        end
+                        if entity.isAlive then
+                            KillauraRemote()
+                        end
+                    end)
+                else
+                    conectionkillaura:Disconnect()
+                    return
+                end
+            end)
+            spawn(function()
+                repeat
+                    wait()
+                    if entity.isAlive then
+                        if killauraanimval["Value"] == "Cool" then
+                            task.wait(0.30)
+                            if (not kauraval) then return end
+                            funianimthing()
+                        elseif killauraanimval["Value"] == "Thing" then
+                            task.wait(0.16)
+                            if (not kauraval) then return end
+                            funianimthing()
+                        end
+                    end
+                until (not kauraval)
+            end)
+        end
+    
+    killauraissoundenabled = katog:CreateOptionTog({
+        ["Name"] = "Swing Sound",
+        ["Func"] = function() end
+    })
+    killaurasoundvalue = katog:CreateSlider({
+        ["Name"] = "Sound",
+        ["Function"] = function() end,
+        ["Min"] = 0,
+        ["Max"] = 1,
+        ["Default"] = 1,
+        ["Round"] = 1
+    })
+    killauraisswingenabled = katog:CreateOptionTog({
+        ["Name"] = "Swing Animation",
+        ["Func"] = function() end
+    })
+    DistVal = katog:CreateSlider({
+        ["Name"] = "Distance",
+        ["Function"] = function() end,
+        ["Min"] = 1,
+        ["Max"] = 20,
+        ["Default"] = 20,
+        ["Round"] = 1
+    })
+    killaurafirstpersonanim = katog:CreateOptionTog({
+        ["Name"] = "Anims (1rs person)",
+        ["Func"] = function() end
+    })
+    killauraanimval = katog:CreateDropDown({
+        ["Name"] = "AnimMode",
+        ["Function"] = function() end,
+        ["List"] = {"Cool", "Thing"},
+        ["Default"] = "Cool"
+    })
+end)
+
+MainSection:NewLabel("Nofall(doesn't work too just added for fun)")
+MainSection:NewToggle("No Fall", "No fall", function(state)
+    if state then
+        if entity.isAlive then
+            spawn(function()
+                repeat
+                    if v == false then return end
+                    wait(0.5)
+                    game:GetService("ReplicatedStorage").rbxts_include.node_modules.net.out._NetManaged.GroundHit:FireServer(workspace.Map.Blocks,1645488277.345853)
+                until v == false
+            end)
+        end
+    end
+
+    end)
